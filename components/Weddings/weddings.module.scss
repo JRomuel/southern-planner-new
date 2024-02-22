@@ -1,0 +1,35 @@
+.content_wrapper{
+    display: flex;
+    gap: 50px;
+    position: relative;
+    padding-bottom: 280px;
+    .left_content{
+        z-index: 1;
+        width: 50%;
+        .title{
+            width: calc(100% + 130px);
+            margin-top: 100px;
+            margin-bottom: 20px;
+        }
+        .sub_text{
+            margin-bottom: 100px;
+        }
+    }
+    .right_content{
+        width: 50%;
+ 
+    }
+
+    .floating_text{
+        position: absolute;
+        width: 100%;
+        font-size: 164px;
+        bottom: -50px;
+        left: 50%;
+        line-height: 1;
+        color: rgba(var(--primary-rgb), 0.2);
+        z-index: 1;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

@@ -1,0 +1,23 @@
+.section{
+    margin-bottom: 100px;
+    .contents{
+        display: flex;
+        gap: 50px;
+        .l_content{
+            width: 50%;
+            margin-top: 250px;
+        }
+        .r_content{
+            width: 50%;
+            .image_wrapper{
+                margin-bottom: 80px;
+            }
+            .text_content{
+                .title{
+                    transform: translateX(-130px);
+                    width: calc(100% + 130px);
+                }
+            }
+        }
+    }
+}
