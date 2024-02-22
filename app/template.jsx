@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react'
 import Nav from "../components/Nav"
 import Lenis from '@studio-freight/lenis'
 import Asides from "../components/Asides"
-import StickyCursor from "../components/StickyCursor"
+import StickyCursor from "../components/cursor"
 
 export default function Template({ children }) {
 
