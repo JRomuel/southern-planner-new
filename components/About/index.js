@@ -5,24 +5,24 @@ import ParallaxImage from "../Misc/ParallaxImage";
 import { motion, useScroll, useMotionValueEvent, useTransform } from "framer-motion";
 
 export default function About() {
-  const container = useRef(null);
+  const container2 = useRef(null);
   const { scrollYProgress } = useScroll({
-    target: container,
+    target: container2,
     offset: ['start end', 'end start']
   });
 
   const speed = useTransform(scrollYProgress, [0, 1], [0, 200]);
 
   return (
-    <section ref={container} className="section" style={{position:"relative", backgroundColor: "#aaa"}}>
+    <section ref={container2} className="section" style={{position:"relative", backgroundColor: "#aaa"}}>
        <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />  
-        <div className="container">
+        <div className="container2">
           <div className={styles.content_wrapper}>
             <div className={styles.image_wrapper}>
-              <ParallaxImage src={about_image} container={container} label='Who we are?' label_position='left' alt='Southern Planners' custom_speed='600'/>
+              <ParallaxImage src={about_image} container2={container2} label='Who we are?' label_position='left' alt='Southern Planners' custom_speed='600'/>
             </div>
             <div className={styles.text_content}>
                 <h3 className={`${styles.title} section-title`}>Southern Planners New</h3>

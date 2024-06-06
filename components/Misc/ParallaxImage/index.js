@@ -4,10 +4,10 @@ import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-mot
 import styles from './parallax_image.module.scss'
 
 
-export default function ParallaxImage({src, container, alt, label, label_position, type, custom_speed }) {
+export default function ParallaxImage({src, container2, alt, label, label_position, type, custom_speed }) {
 
   const { scrollYProgress } = useScroll({
-      target: container,
+      target: container2,
       offset: ['start end', 'end start']
   })
   const speed = useTransform(scrollYProgress, [0, 1], [0, 400]);
