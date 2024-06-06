@@ -14,7 +14,7 @@ export default function About() {
   const speed = useTransform(scrollYProgress, [0, 1], [0, 200]);
 
   return (
-    <section ref={container2} className="section" style={{position:"relative", backgroundColor: "#aaa"}}>
+    <section ref={container2} className="section">
        <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
