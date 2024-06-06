@@ -15,7 +15,7 @@ export default function About() {
               <ParallaxImage src={about_image} container={container} label='Who we are?' label_position='left' alt='Southern Planners'/>
             </div>
             <div className={styles.text_content}>
-                <h3 className={`${styles.title} section-title`}>Southern Planners</h3>
+                <h3 className={`${styles.title} section-title`}>Southern Planner's</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
             </div>
           </div>
