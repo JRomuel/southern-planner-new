@@ -6,9 +6,12 @@ import { motion, useScroll } from "framer-motion";
 
 export default function About() {
   const container = useRef(null);
-  const { scrollYProgress } = useScroll();
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ['start end', 'end start']
+  });
   return (
-    <section ref={container} className="section">
+    <section ref={container} className="section" style={{position:"relative", backgroundColor: "#aaa"}}>
        <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
