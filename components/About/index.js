@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import about_image from "../../public/images/about-image.jpg"
 import styles from './about.module.scss'
 import ParallaxImage from "../Misc/ParallaxImage";
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useMotionValueEvent, useTransform } from "framer-motion";
 
 export default function About() {
   const container = useRef(null);
@@ -10,12 +10,23 @@ export default function About() {
     target: container,
     offset: ['start end', 'end start']
   });
+
+  const speed = useTransform(scrollYProgress, [0, 1], [0, 200]);
+
+  useMotionValueEvent(speed, "animationStart", () => {
+    console.log("animation started on x")
+  })
+  
+  useMotionValueEvent(speed, "change", (latest) => {
+    console.log("x changed to", latest)
+  })
+
   return (
     <section ref={container} className="section" style={{position:"relative", backgroundColor: "#aaa"}}>
        <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
-      />
+      />  
         <div className="container">
           <div className={styles.content_wrapper}>
             <div className={styles.image_wrapper}>
