@@ -12,7 +12,7 @@ export default function About() {
         <div className="container">
           <div className={styles.content_wrapper}>
             <div className={styles.image_wrapper}>
-              <ParallaxImage src={about_image} container={container} label='Who we are?' label_position='left' alt='Southern Planners'/>
+              <ParallaxImage src={about_image} container={container} label='Who we are?' label_position='left' alt='Southern Planners' custom_speed='600'/>
             </div>
             <div className={styles.text_content}>
                 <h3 className={`${styles.title} section-title`}>Southern Planners New</h3>

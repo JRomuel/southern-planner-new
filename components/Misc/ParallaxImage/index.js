@@ -10,7 +10,7 @@ export default function ParallaxImage({src, container, alt, label, label_positio
       target: container,
       offset: ['start end', 'end start']
   })
-  const speed = useTransform(scrollYProgress, [0, 1], [0, custom_speed ?? 300]);
+  const speed = useTransform(scrollYProgress, [0, 1], [0, parseInt(custom_speed) ?? 300]);
 
   return (
     <div className={`${styles.parallax_image} ${label ? styles.with_label : ''} ${label_position ? (label_position == 'left' ? styles.left_label :  styles.right_label) : ''} ${type ? (type == 'square' ? styles.square_type : '' ) : ''}` }>
