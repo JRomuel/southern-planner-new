@@ -7,6 +7,7 @@ import styles from './parallax_image.module.scss'
 export default function ParallaxImage({src, container2, alt, label, label_position, type, custom_speed }) {
 
   const { scrollYProgress } = useScroll({
+      layoutEffect: false,
       target: container2,
       offset: ['start end', 'end start']
   })
