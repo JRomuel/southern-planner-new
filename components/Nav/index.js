@@ -14,7 +14,7 @@ export default function Nav() {
     if(latest > previous && latest > 150){
       setHidden(true);
     }else{
-      setHidden(true);
+      setHidden(false);
     }
   })
   

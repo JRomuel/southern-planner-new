@@ -14,6 +14,9 @@ export default function Home() {
     <main className={styles.main}>
       <Hero/>
       <About/>
+      <Weddings/>
+      <HappyClients/>
+      <Services/>
       <LetsTalk/>
       <Footer/>
     </main>
