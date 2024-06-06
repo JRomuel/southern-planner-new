@@ -2,13 +2,17 @@ import React, { useRef } from 'react'
 import about_image from "../../public/images/about-image.jpg"
 import styles from './about.module.scss'
 import ParallaxImage from "../Misc/ParallaxImage";
-
+import { motion, useScroll } from "framer-motion";
 
 export default function About() {
   const container = useRef(null);
-
+  const { scrollYProgress } = useScroll();
   return (
     <section ref={container} className="section">
+       <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
         <div className="container">
           <div className={styles.content_wrapper}>
             <div className={styles.image_wrapper}>
