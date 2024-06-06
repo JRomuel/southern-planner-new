@@ -13,14 +13,6 @@ export default function About() {
 
   const speed = useTransform(scrollYProgress, [0, 1], [0, 200]);
 
-  useMotionValueEvent(speed, "animationStart", () => {
-    console.log("animation started on x")
-  })
-  
-  useMotionValueEvent(speed, "change", (latest) => {
-    console.log("x changed to", latest)
-  })
-
   return (
     <section ref={container} className="section" style={{position:"relative", backgroundColor: "#aaa"}}>
        <motion.div

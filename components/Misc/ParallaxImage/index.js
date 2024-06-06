@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image"
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
 import styles from './parallax_image.module.scss'
 
 
@@ -10,7 +10,15 @@ export default function ParallaxImage({src, container, alt, label, label_positio
       target: container,
       offset: ['start end', 'end start']
   })
-  const speed = useTransform(scrollYProgress, [0, 1], [0, custom_speed ?? 200]);
+  const speed = useTransform(scrollYProgress, [0, 1], [0, 400]);
+
+  useMotionValueEvent(speed, "animationStart", () => {
+    console.log("animation started on x")
+  })
+  
+  useMotionValueEvent(speed, "change", (latest) => {
+    console.log("x changed to", latest)
+  })
 
   return (
     <div className={`${styles.parallax_image} ${label ? styles.with_label : ''} ${label_position ? (label_position == 'left' ? styles.left_label :  styles.right_label) : ''} ${type ? (type == 'square' ? styles.square_type : '' ) : ''}` }>
