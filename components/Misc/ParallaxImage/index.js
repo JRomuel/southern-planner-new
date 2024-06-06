@@ -12,6 +12,7 @@ export default function ParallaxImage({src, container2, alt, label, label_positi
   })
   const speed = useTransform(scrollYProgress, [0, 1], [0, 400]);
 
+  console.log(container2);
   useMotionValueEvent(speed, "animationStart", () => {
     console.log("animation started on x")
   })
