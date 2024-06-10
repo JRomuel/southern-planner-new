@@ -5,6 +5,9 @@
     height: 100vh;
     z-index: 100;
     display: block;
+    @media (max-width: 1400px) {
+        display: none;
+    }
     &.laside{
         left: 0;
         border-right: 1px solid rgba(var(--primary-color-rgb), 0.2);

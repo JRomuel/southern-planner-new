@@ -44,6 +44,14 @@
   --card-border-rgb: 131, 134, 135;
 
   --primary-color-rgb: 107,61,89;
+
+  --breakpoint-tablet: 991px;
+  --breakpoint-laptop: 1200px;
+  --breakpoint-laptop-xl: 1400px;
+  --breakpoint-laptop-xxl: 1550px;
+  --breakpoint-mobile: 500px;
+  --breakpoint-mobile-xs: 320px;
+
 }
 
 * {
@@ -58,11 +66,18 @@ body {
   /* overflow-x: hidden; */
   height: 400vh;
   font-family: var(--font-roboto);
+  
 }
 
 body {
   color: rgba(var(--foreground-rgb),1);
 }
+@media (max-width: 1200px) {
+  body {
+    font-size: 0.9em;
+  }
+} 
+
 
 a {
   color: inherit;
@@ -82,7 +97,21 @@ a {
   font-size: 60px;
   font-family: var(--breathings-font);
   font-weight: 300;
+
 }
+
+@media (max-width: 1200px) {
+  .section-title{
+    font-size: 50px;
+  }
+  
+} 
+
+@media (max-width: 991px) {
+  .section-title{
+    font-size: 40px;
+  }
+} 
 
 .mb-4{
   margin-bottom: 10px;

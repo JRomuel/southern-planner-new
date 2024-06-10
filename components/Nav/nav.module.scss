@@ -15,9 +15,16 @@
         width: 85px;
         height: 85px;
         flex-shrink: 0;
+
+        @media (max-width: 1400px) {
+            height: 72px;
+        }  
         .icon_image{
             height: 40px;
             width: auto;
+            @media (max-width: 1400px) {
+                height: 36px;
+            }  
         }
     }
     .menu_wrapper{
@@ -27,16 +34,33 @@
         justify-content: space-between;
         align-items: center;
         flex-grow: 1;
+        @media (max-width: 1400px) {
+            height: 72px;
+        }  
         .logo{
             height: 60px;
             width: auto;
             padding-left: 20px;
+      
+            @media (max-width: 1400px) {
+                height: 54px;
+            }  
+            @media (max-width: 991px) {
+                margin: auto;
+                padding-left: 0;
+            } 
         }
         .menu{
             margin-right: 20px;
+            @media (max-width: 991px) {
+                display: none;
+            }  
             ul{
                 display: flex;
                 gap: 30px;
+                @media (max-width: 1200px) {
+                    gap: 16px;
+                } 
                 li{
                     list-style: none;
                     a{
@@ -55,6 +79,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @media (max-width: 1400px) {
+            height: 72px;
+        }  
         a{
             width: 32px;
             height: auto;

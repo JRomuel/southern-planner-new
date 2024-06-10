@@ -3,13 +3,22 @@
     gap: 50px;
     position: relative;
     padding-bottom: 280px;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
     .left_content{
         z-index: 1;
         width: 50%;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
         .title{
             width: calc(100% + 130px);
             margin-top: 100px;
             margin-bottom: 20px;
+            @media (max-width: 991px) {
+                margin-top: 50px;
+            }
         }
         .sub_text{
             margin-bottom: 100px;
@@ -17,6 +26,9 @@
     }
     .right_content{
         width: 50%;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
  
     }
 
@@ -31,5 +43,12 @@
         z-index: 1;
         text-transform: uppercase;
         text-align: center;
+        @media (max-width: 1200px) {
+            font-size: 130px;
+        } 
+        @media (max-width: 991px) {
+            font-size: 100px;
+            bottom: -20px;
+        } 
     }
 }

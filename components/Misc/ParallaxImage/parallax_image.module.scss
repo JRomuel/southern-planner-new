@@ -5,9 +5,21 @@
     &.with_label{
         &.left_label{
             padding-left: 30px;
+            @media (max-width: 991px) {
+                padding-left: 20px;
+            } 
+            @media (max-width: 767px) {
+                padding-left: 0;
+            } 
         }
         &.right_label{
             padding-right: 30px;
+            @media (max-width: 991px) {
+                padding-right: 20px;
+            } 
+            @media (max-width: 767px) {
+                padding-right: 0;
+            } 
             .label{
                 position: absolute;
                 z-index: 1;
@@ -15,6 +27,9 @@
                 bottom: 40%;
                 right: -4px;
                 left: auto;
+                @media (max-width: 767px) {
+                    right: 0;
+                } 
             }
         }
     }
@@ -32,6 +47,13 @@
         left: 30px;
         transform: rotate(90deg);
         transform-origin: top left;
+        @media (max-width: 991px) {
+            left: 20px;
+        } 
+
+        @media (max-width: 767px) {
+            left: 35px;
+        } 
         span{
             min-width: 200px;
             height: 35px;
@@ -54,6 +76,7 @@
         position: relative;
         padding-top: 150%;
         overflow: hidden;
+        border-radius: 12px;
         .image_wrapper{
             position: absolute;
             top: 0;
