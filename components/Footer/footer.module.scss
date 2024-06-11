@@ -8,10 +8,17 @@
         justify-content: space-between;
         gap: 200px;
 
-        @media (max-width: 767px) {
-            flex-direction: column;
+        @media (max-width: 1200px) {
             gap: 100px;
         } 
+        @media (max-width: 991px) {
+            flex-direction: column;
+            gap: 50px;
+        } 
+        @media (max-width: 767px) {
+            gap: 90px;
+        } 
+   
    
         .brand{
             text-align: center;
@@ -26,6 +33,10 @@
             padding-top: 20px;
             display: flex;
             gap: 50px;
+            @media (max-width: 1200px) {
+                gap: 30px;
+            } 
+    
             @media (max-width: 767px) {
                 flex-direction: column;
             } 
