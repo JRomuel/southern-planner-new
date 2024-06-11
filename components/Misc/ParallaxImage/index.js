@@ -19,14 +19,19 @@ export default function ParallaxImage({src, container, alt, label, label_positio
 
     
   const checkWindoWidth = () => {
-    if(window.innerWidth >= 1400){
-        return 200;
-      }else if(window.innerWidth >= 1200 && window.innerWidth < 1400){
-        return 150;
-      }else if(window.innerWidth >= 768 && window.innerWidth < 1200){
-        return 70;
+
+      if (typeof window !== "undefined") {
+        if(window.innerWidth >= 1400){
+          return 200;
+        }else if(window.innerWidth >= 1200 && window.innerWidth < 1400){
+          return 150;
+        }else if(window.innerWidth >= 768 && window.innerWidth < 1200){
+          return 70;
+        }else{
+          return 70;
+        }
       }else{
-        return 70;
+        return 200;
       }
   }; 
 

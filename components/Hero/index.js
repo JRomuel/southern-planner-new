@@ -19,16 +19,20 @@ function debounce(fn, ms) {
 export default function Hero() {
     
     const checkWindoWidth = () => {
+      if (typeof window !== "undefined") {
         if(window.innerWidth >= 1400){
-            return 85;
-          }else if(window.innerWidth >= 1200 && window.innerWidth < 1400){
-            return 60;
-          }else if(window.innerWidth >= 768 && window.innerWidth < 1200){
-            return 36;
-          }else{
-            return 0;
-          }
-      }; 
+          return 85;
+        }else if(window.innerWidth >= 1200 && window.innerWidth < 1400){
+          return 60;
+        }else if(window.innerWidth >= 768 && window.innerWidth < 1200){
+          return 36;
+        }else{
+          return 0;
+        }
+      }else{
+        return 85;
+      }
+    }; 
 
     const [pad, setpad] = useState(checkWindoWidth());
 
