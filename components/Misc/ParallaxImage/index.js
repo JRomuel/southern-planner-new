@@ -26,9 +26,9 @@ export default function ParallaxImage({src, container, alt, label, label_positio
         }else if(window.innerWidth >= 1200 && window.innerWidth < 1400){
           return 150;
         }else if(window.innerWidth >= 768 && window.innerWidth < 1200){
-          return 70;
+          return 100;
         }else{
-          return 70;
+          return 100;
         }
       }else{
         return 200;
