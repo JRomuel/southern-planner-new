@@ -30,7 +30,7 @@ const container3 = useRef(null);
                 <div className={styles.comment_below}>
                     <div ref={container2} className={`${styles.review} ${styles.review_2}`}>
                         <div className={styles.image_wrapper}>
-                            <ParallaxImage src={client_image_1} container={container2} type="square"  custom_speed="100"/>
+                            <ParallaxImage src={client_image_1} container={container2} type="square" />
                         </div>
                         <div className={styles.comment}>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, repudiandae commodi labore </p>

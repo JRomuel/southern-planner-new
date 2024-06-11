@@ -50,5 +50,11 @@
             font-size: 100px;
             bottom: -20px;
         } 
+        @media (max-width: 767px) {
+            font-size: 80px;
+        } 
+        @media (max-width: 500px) {
+            font-size: 40px;
+        } 
     }
 }

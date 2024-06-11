@@ -27,7 +27,13 @@
                 bottom: 40%;
                 right: -4px;
                 left: auto;
+                @media (max-width: 991px) {
+                    right: -15px;
+                    bottom: 55%;
+                } 
                 @media (max-width: 767px) {
+                    bottom: auto;
+                    top: 30%;
                     right: 0;
                 } 
             }

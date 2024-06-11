@@ -20,27 +20,11 @@ export default function Nav() {
   
   return (
     <motion.div
-      variants={{ 
-        visible: { backgroundColor: "rgba(255, 255, 255, 1)" },
-        hidden: { backgroundColor: "rgba(255, 255, 255, 0)" }
-      }}
-      initial='visible'
-      animate={hidden?'hidden':'visible'}
-      transition={{ duration: 0.6, ease: 'easeInOut' }}
-      className={styles.wrapper}>
-
+      className={`${styles.wrapper} ${hidden?styles.hidden:''}`}>
       <div className={styles.icon}>
         <Image className={styles.icon_image} src={icon} alt="icon"/>
       </div>
       <motion.div 
-         variants={{ 
-          visible: { opacity: 1 },
-          hidden: { opacity: 0 }
-        }}
-        initial='visible'
-        animate={hidden?'hidden':'visible'}
-        transition={{ duration: 0.6, ease: 'easeInOut' }}
-
         className={styles.menu_wrapper}>
         <div className={styles.logo}>
           <Image src={logo} style={{width:'auto', height:"100%"}} alt="logo"/>

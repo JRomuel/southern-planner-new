@@ -3,6 +3,12 @@
     .contents{
         display: flex;
         gap: 50px;
+        @media (max-width: 767px) {
+            gap: 20px;
+        } 
+        @media (max-width: 500px) {
+            gap: 14px;
+        } 
         .l_content{
             width: 50%;
             margin-top: 250px;
@@ -16,6 +22,21 @@
                 .title{
                     transform: translateX(-130px);
                     width: calc(100% + 130px);
+                    @media (max-width: 767px) {
+                        transform: translateX(-90px);
+                        width: calc(100% + 90px);
+                        font-size: 30px;
+                    } 
+                    @media (max-width: 500px) {
+                        transform: translateX(-60px);
+                        width: calc(100% + 60px);
+                        font-size: 24px;
+                    } 
+                }
+                p{
+                    @media (max-width: 500px) {
+                        font-size: 12px;
+                    } 
                 }
             }
         }
