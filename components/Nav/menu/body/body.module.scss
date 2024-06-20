@@ -9,5 +9,10 @@
         font-weight: 400;
         padding-left: 10px;
         padding-right: 30px;
+        text-transform: uppercase;
+        overflow: hidden;
+    }
+    p{
+        display: flex;
     }
 }

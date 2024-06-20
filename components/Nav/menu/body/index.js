@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './body.module.scss'
 import Link from "next/link"
+import { motion } from "framer-motion";
+import { translate } from "../../anim";
 
 function Body() {
     const links = [
@@ -29,14 +31,29 @@ function Body() {
             link: "#",
             src: "images/services_2.jpg"
         },
-    ]
+    ];
+
+    const getChar = (title) => {
+        let chars = [];
+        title.split("").forEach((char, index) => {
+            chars.push(
+                <motion.span custom={[index * 0.02, (title.length - index) * 0.01]} variants={translate} initial="initial" animate="enter" exit="exit" key={`c_${index}`}>
+                    {char}
+                </motion.span>
+            )
+        });
+
+        return chars;
+    }
+
+
     return (
         <div className={styles.body}>
              {
                 links.map((link,index) => {
                     const { title, href } = link;
                     return <Link href={link} key={`l_${index}`}>
-                        <p>{title}</p>
+                        <p>{getChar(title)}</p>
                     </Link>
                 })
              }
