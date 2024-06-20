@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import styles from './hero.module.scss'
 import { useScroll, useTransform, motion, useMotionValueEvent } from 'framer-motion';
 import { useRef } from 'react';
-
+import { useInView } from 'react-intersection-observer';
 
 function debounce(fn, ms) {
     let timer;
@@ -54,13 +54,23 @@ export default function Hero() {
         offset: ['start start', 'end end']
     })
 
+    const animation = {
+      initial: {y: "100%"},
+      enter: i => ({y: "0", transition: {duration: 0.75, ease: [0.33, 1, 0.68, 1],  delay: 0.075 * i}})
+    }
+  
+    const { ref, inView, entry } = useInView({
+      threshold: 0.75,
+      triggerOnce: true
+    });
+  
 
     const padding = useTransform(scrollYProgress, [0, 1], [0, pad]);
 
     return (
         <>
              <section ref={container} className={styles.hero}>
-                <div className={styles.content}>
+                <div ref={ref} className={styles.content}>
                     <div className={styles.bg}>
                     <video autoPlay playsInline muted loop>
                         <source src="./videos/Hero_Cluadia_720.mp4" type="video/mp4" />
@@ -69,7 +79,9 @@ export default function Hero() {
                     </div>
                     <div className={styles.text_content}>
                         <div className="container">
-                            <h1>Wedding Planner</h1>
+                            <div className="lineMask">
+                              <motion.h1 variants={animation} initial="initial" animate={inView ? "enter" : ""}>Wedding Planner</motion.h1>
+                            </div>
                             <p>LET’S PLAN YOUR BIG DAY, STRESS FREE!</p>
                         </div>
                     </div>

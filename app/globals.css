@@ -64,13 +64,18 @@ html,
 body {
   max-width: 100vw;
   /* overflow-x: hidden; */
-  height: 400vh;
   font-family: var(--font-roboto);
   
 }
 
 body {
   color: rgba(var(--foreground-rgb),1);
+}
+
+html.no-scroll, body.no-scroll{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 @media (max-width: 1200px) {
   body {
@@ -171,4 +176,13 @@ a {
   height: 10px;
   background: red;
   transform-origin: 0%;
+}
+
+.lineMask{
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.lineMask h1{
+  font-weight: 700;
 }
