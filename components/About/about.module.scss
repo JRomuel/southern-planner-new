@@ -10,7 +10,7 @@
     }
     .text_content{
         .title{
-            transform: translateX(-130px);
+            transform: translateX(-100px);
             width: calc(100% + 130px);
             @media (max-width: 991px) {
                 transform: translateX(-100px);

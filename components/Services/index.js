@@ -2,7 +2,7 @@ import React, {useRef} from 'react'
 import styles from './services.module.scss'
 import ParallaxImage from "../Misc/ParallaxImage"
 import service_image_1 from '../../public/images/services_1.jpg'
-import service_image_2 from '../../public/images/services_2.jpg'
+import service_image_2 from '../../public/images/services_3.jpg'
 export default function Services() {
   const container1 = useRef(null);
   const container2 = useRef(null);

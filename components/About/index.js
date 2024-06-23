@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import about_image from "../../public/images/about-image.jpg"
+import about_image from "../../public/images/about-image-new.jpeg"
 import styles from './about.module.scss'
 import ParallaxImage from "../Misc/ParallaxImage";
 
@@ -16,7 +16,9 @@ export default function About() {
             </div>
             <div className={styles.text_content}>
                 <h3 className={`${styles.title} section-title`}>Southern Planners</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                <p>Southern Planners was stablished since 2018, we adore working with couples because we believe in the magic of love stories coming to life. The privilege of being part of your special day, ensuring every detail is perfect, is what drives our passion.
+                <br /><br />
+                We’re excited to collaborate with you to turn your vision into reality. Southern Planners are here to help you accomplish whatever goals you have for your special day.</p>
             </div>
           </div>
 

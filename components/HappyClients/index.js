@@ -2,8 +2,8 @@ import React, {useRef} from 'react'
 import styles from './happyclients.module.scss'
 import ParallaxImage from "../Misc/ParallaxImage"
 import client_image_1 from '../../public/images/client_1.jpg'
-import client_image_2 from '../../public/images/client_2.jpg'
-import client_image_3 from '../../public/images/client_3.jpg'
+import client_image_2 from '../../public/images/client_4.jpeg'
+import client_image_3 from '../../public/images/client_5.jpg'
 
 export default function HappyClients() {
 const container = useRef(null);
@@ -16,7 +16,7 @@ const container3 = useRef(null);
             <div className="container">
                 <div ref={container} className={`${styles.review} ${styles.review_1}`}>
                     <div className={styles.image_wrapper}>
-                        <ParallaxImage src={client_image_2} container={container} type="square"/>
+                        <ParallaxImage src={client_image_2} container={container} type="rectangle"/>
                     </div>
                     
                     <div className={styles.text_content}>

@@ -102,7 +102,7 @@ a {
   font-size: 60px;
   font-family: var(--breathings-font);
   font-weight: 300;
-
+  color: rgb(var(--primary-rgb));
 }
 
 @media (max-width: 1200px) {

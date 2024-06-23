@@ -45,6 +45,11 @@
             padding-top: 100%;
         }
     }
+    &.rectangle_type{
+        .figure{
+            padding-top: 80%;
+        }
+    }
 
     .label{
         position: absolute;
@@ -95,6 +100,7 @@
                 width: 100%;
                 display: block;
                 object-fit: cover;
+                margin-top: -5%;
             }
         }
    
