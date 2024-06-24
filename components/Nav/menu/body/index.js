@@ -2,36 +2,10 @@ import React from 'react'
 import styles from './body.module.scss'
 import Link from "next/link"
 import { motion } from "framer-motion";
-import { translate } from "../../anim";
+import { translate, blur } from "../../anim";
 
-function Body() {
-    const links = [
-        {
-            title: "About",
-            link: "#",
-            src: "images/about-image.jpg"
-        },
-        {
-            title: "Weddings",
-            link: "#",
-            src: "images/services_1.jpg"
-        },
-        {
-            title: "Services",
-            link: "#",
-            src: "images/services_1.jpg"
-        },
-        {
-            title: "Happy Clients",
-            link: "#",
-            src: "images/services_2.jpg"
-        },
-        {
-            title: "Book Now",
-            link: "#",
-            src: "images/services_2.jpg"
-        },
-    ];
+function Body({links, selectedLink, setSelectedLink}) {
+
 
     const getChar = (title) => {
         let chars = [];
@@ -52,8 +26,13 @@ function Body() {
              {
                 links.map((link,index) => {
                     const { title, href } = link;
-                    return <Link href={link} key={`l_${index}`}>
-                        <p>{getChar(title)}</p>
+                    return <Link 
+                        href={link} 
+                        key={`l_${index}`}
+                        onMouseOver={() => {setSelectedLink({isActive: true, index})}}
+                        onMouseLeave={() => {setSelectedLink({isActive: false, index})}}
+                        >
+                        <motion.p variants={blur} initial="initial" animate={selectedLink.isActive && selectedLink.index != index ? "open" : "closed"}>{getChar(title)}</motion.p>
                     </Link>
                 })
              }

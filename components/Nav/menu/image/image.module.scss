@@ -1,0 +1,17 @@
+.imageContainer{
+    display: none;
+    @media only screen and (min-width:1000px){
+        display: block;
+        width: 450px;
+        height: 450px;
+        position: relative;
+        flex-shrink: 0;
+        @media (max-width: 1200px) {
+            width: 380px;
+            height: 380px;
+        }  
+        img{
+            object-fit: cover;
+        }
+    }
+}

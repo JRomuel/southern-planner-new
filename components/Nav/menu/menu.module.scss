@@ -1,6 +1,15 @@
 .menu{
     overflow: hidden;
     .wrapper{
+        margin-bottom: 40px;
+        display: flex;
+        padding: 30px 100px;
+        @media (max-width: 1400px) {
+            padding: 30px 80px;
+        }  
+        @media (max-width: 1200px) {
+            padding: 30px;
+        }  
         p{
             margin-bottom: 0;
             display: flex;
