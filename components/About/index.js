@@ -8,7 +8,7 @@ export default function About() {
   const container = useRef(null);
 
   return (
-    <section ref={container} className="section">
+    <section ref={container} id="about" className="section">
         <div className="container">
           <div className={styles.content_wrapper}>
             <div className={styles.image_wrapper}>

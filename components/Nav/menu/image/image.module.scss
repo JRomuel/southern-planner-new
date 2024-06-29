@@ -2,16 +2,18 @@
     display: none;
     @media only screen and (min-width:1000px){
         display: block;
-        width: 450px;
-        height: 450px;
+        width: 400px;
+        height: 400px;
         position: relative;
         flex-shrink: 0;
-        @media (max-width: 1200px) {
-            width: 380px;
-            height: 380px;
+     
+        @media (max-width: 1199px) {
+            width: 350px;
+            height: 350px;
         }  
         img{
             object-fit: cover;
+            border-radius: 12px;
         }
     }
 }

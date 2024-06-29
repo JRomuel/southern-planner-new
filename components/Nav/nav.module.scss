@@ -156,5 +156,14 @@
             
         }
     }
+    .background{
+        background-color: rgb(var(--primary-rgb));
+        opacity: 0.5;
+        height: 0;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 100%;
+    }
 
 }

@@ -4,8 +4,9 @@ import { height } from "../anim"
 import styles from './menu.module.scss'
 import Body from "./body"
 import SideImage from "./image"
+import Footer from "./footer"
 
-function Menu() {
+function Menu({closeNav}) {
   useEffect(() => {
       document.body.classList.add("no-scroll");
       document.body.dataset.lenisPrevent = "true";
@@ -17,29 +18,29 @@ function Menu() {
   }, []);
 
   const links = [
-    {
+    { 
         title: "About",
-        link: "#",
+        href: "#about",
         src: "/images/about-image.jpg"
     },
     {
         title: "Weddings",
-        link: "#",
+        href: "#",
         src: "/images/weddings-image.jpg"
     },
     {
         title: "Services",
-        link: "#",
+        href: "#",
         src: "/images/services_3.jpg"
     },
     {
         title: "Happy Clients",
-        link: "#",
+        href: "#",
         src: "/images/services_1.jpg"
     },
     {
         title: "Book Now",
-        link: "#",
+        href: "#",
         src: "/images/services_4.jpg"
     },
   ];
@@ -51,8 +52,8 @@ function Menu() {
     <motion.div className={styles.menu} variants={height} initial="initial" animate="enter" exit="exit">
         <div className={styles.wrapper}>
             <div className={styles.menu_container}>
-              <Body links={links} selectedLink={selectedLink} setSelectedLink={setSelectedLink}/>
-              {/* <Footer/> */}
+              <Body links={links} selectedLink={selectedLink} setSelectedLink={setSelectedLink} closeNav={closeNav}/>
+              <Footer/>
             </div>
             <SideImage src={links[selectedLink.index].src} isActive={selectedLink.isActive}/>
         </div>
