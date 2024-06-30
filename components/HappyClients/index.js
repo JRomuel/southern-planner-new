@@ -41,7 +41,7 @@ const container3 = useRef(null);
                             <ParallaxImage src={client_image_3} container={container3} type="square"/>
                         </div>
                         <div className={styles.comment}>
-                            <p>Hello po Ma'am Hecel and team maraming salamat po sa inyong assistance sa aming wedding. Achieve na achieve ang stress free na bride at groom. Kakakilig para kaming artista haha. 🩷🩷🩷 </p>
+                            <p>Hello po Ma&lsquo;am Hecel and team maraming salamat po sa inyong assistance sa aming wedding. Achieve na achieve ang stress free na bride at groom. Kakakilig para kaming artista haha. 🩷🩷🩷 </p>
                         </div>
                     </div>
                 </div>
