@@ -12,7 +12,7 @@ const container3 = useRef(null);
 
   return (
     <div>
-        <section className={`${styles.section} section`}>
+        <section id="happy_clients" className={`${styles.section} section`}>
             <div className="container">
                 <div ref={container} className={`${styles.review} ${styles.review_1}`}>
                     <div className={styles.image_wrapper}>

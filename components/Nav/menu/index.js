@@ -25,22 +25,22 @@ function Menu({closeNav}) {
     },
     {
         title: "Weddings",
-        href: "#",
+        href: "#weddings",
         src: "/images/weddings-image.jpg"
     },
     {
         title: "Services",
-        href: "#",
+        href: "#services",
         src: "/images/services_3.jpg"
     },
     {
         title: "Happy Clients",
-        href: "#",
+        href: "#happy_clients",
         src: "/images/services_1.jpg"
     },
     {
         title: "Book Now",
-        href: "#",
+        href: "#contact",
         src: "/images/services_4.jpg"
     },
   ];

@@ -4,7 +4,7 @@ import styles from './letstalk.module.scss'
 export default function LetsTalk() {
   return (
     <>
-    <section className={`${styles.section} section`}>
+    <section id="contact" className={`${styles.section} section`}>
         <div className="container">
             <div className={styles.content}>
                 <h3 className={`${styles.title} section-title`}>Are you ready to plan your special day?</h3>

@@ -43,9 +43,9 @@ export default function Nav() {
             </div>
             <motion.div className={styles.menu} variants={opacity} animate={isMenuActive ? "closed" : "open"}>
               <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#happy_clients">Happy Clients</a></li>
+                <li><a href="#contact">Book Now!</a></li>
          
               </ul>
             </motion.div>

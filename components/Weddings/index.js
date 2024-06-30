@@ -17,7 +17,7 @@ export default function Weddings() {
 
 
   return (
-    <section ref={container} className="section">
+    <section id="weddings" ref={container} className="section">
         <div className="container">
           <div className={styles.content_wrapper}>
             <div className={styles.left_content}>

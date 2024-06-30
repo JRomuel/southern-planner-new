@@ -10,7 +10,7 @@ export default function Services() {
 
   return (
     <div>
-        <section className={`${styles.section} section`}>
+        <section id="services" className={`${styles.section} section`}>
             <div className="container">
                 <div className={styles.contents}>
              

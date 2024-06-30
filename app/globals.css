@@ -92,6 +92,9 @@ a {
 .primary-color{
   color: rgb(var(--primary-rgb));
 }
+.primary-color-accent{
+  color: rgb(186 128 164);
+}
 
 .section{
   padding: 40px 0;
