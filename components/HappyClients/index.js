@@ -22,7 +22,7 @@ const container3 = useRef(null);
                     <div className={styles.text_content}>
                         <h3 className={`${styles.title} section-title`}>Happy Clients</h3>
                         <div className={styles.comment}>
-                            <p>... Everything went well that day despite of the weather condition and we really appreciate everything that you guys did for us. Nakapaka hands on po. ❤️Especially sa nagassisst sa akin. Another thing po was may bouquet it was so beautiful same with the boutonniere and mini bouquets for the whole entourage.. Super love ko 💐💐 plus free wedding car bouquet. Thank you. I will be sure to recommend you to others in the future!</p>
+                            <p>... Nakapaka hands on po. ❤️Especially sa nagassisst sa akin. Another thing po was may bouquet it was so beautiful same with the boutonniere and mini bouquets for the whole entourage.. Super love ko 💐💐 plus free wedding car bouquet. Thank you. I will be sure to recommend you to others in the future!</p>
                         </div>
                    
                     </div>
