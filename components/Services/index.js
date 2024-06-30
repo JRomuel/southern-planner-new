@@ -3,6 +3,18 @@ import styles from './services.module.scss'
 import ParallaxImage from "../Misc/ParallaxImage"
 import service_image_1 from '../../public/images/services_1.jpg'
 import service_image_2 from '../../public/images/services_3.jpg'
+import { PiFlowerTulip } from "react-icons/pi";
+import { MdOutlineAddAPhoto } from "react-icons/md";
+import { PiCalendarCheck } from "react-icons/pi";
+import { LiaEnvelopeOpenTextSolid } from "react-icons/lia";
+import { RiCake3Line } from "react-icons/ri";
+import { HiOutlineTruck } from "react-icons/hi2";
+import { TbReportMoney } from "react-icons/tb";
+import { PiDress } from "react-icons/pi";
+
+
+
+
 export default function Services() {
   const container1 = useRef(null);
   const container2 = useRef(null);
@@ -26,8 +38,20 @@ export default function Services() {
                         </div>
                         <div className={styles.text_content}>
                             <h3 className={`${styles.title} section-title`}>We Gotcha Covered!</h3>
-                            <div className={styles.comment}>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, repudiandae commodi labore officiis aut expedita quae explicabo impedit rem quos eos tempore voluptate mollitia eligendi temporibus ipsam nihil iusto harum!</p>
+                            <div className={styles.list}>
+                                <ul>
+                                    <li><span className={styles.icon}><PiFlowerTulip /></span> Creating a Bouquet</li>
+                                    <li><span className={styles.icon}><PiCalendarCheck /></span> Day Of Coordination</li>
+                                    <li><span className={styles.icon}><LiaEnvelopeOpenTextSolid /></span> Guests & Invitations</li>
+                                    <li><span className={styles.icon}><MdOutlineAddAPhoto /></span> Photo Booth</li>
+                                </ul>
+
+                                <ul>
+                                    <li><span className={styles.icon}><RiCake3Line /></span> Caterers and Desserts</li>
+                                    <li><span className={styles.icon}><HiOutlineTruck /></span> Secure Supplier </li>
+                                    <li><span className={styles.icon}><TbReportMoney /></span> Creating a budget</li>
+                                    <li><span className={styles.icon}><PiDress /></span> Choosing a style</li>
+                                </ul>
                             </div>
                         </div>
                     </div>

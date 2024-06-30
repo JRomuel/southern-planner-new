@@ -53,18 +53,12 @@ export default function Hero() {
         target: container,
         offset: ['start start', 'end end']
     })
-
-    const animation = {
-      initial: {y: "100%"},
-      enter: i => ({y: "0", transition: {duration: 0.75, ease: [0.33, 1, 0.68, 1],  delay: 0.075 * i}})
-    }
   
     const { ref, inView, entry } = useInView({
       threshold: 0.75,
       triggerOnce: true
     });
   
-
     const padding = useTransform(scrollYProgress, [0, 1], [0, pad]);
 
     return (
@@ -73,15 +67,13 @@ export default function Hero() {
                 <div ref={ref} className={styles.content}>
                     <div className={styles.bg}>
                     <video autoPlay playsInline muted loop>
-                        <source src="./videos/Hero_Cluadia_720.mp4" type="video/mp4" />
+                        <source src="./videos/southern-planner-video.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                     </div>
                     <div className={styles.text_content}>
                         <div className="container">
-                            <div className="lineMask">
-                              <motion.h1 variants={animation} initial="initial" animate={inView ? "enter" : ""}>Wedding Planner</motion.h1>
-                            </div>
+                            <h1>Wedding Planner</h1>
                             <p>LET’S PLAN YOUR BIG DAY, STRESS FREE!</p>
                         </div>
                     </div>

@@ -54,7 +54,22 @@
                         width: 100%;
                     } 
                 }
-                p{
+                .list{
+                    display: flex;
+                    gap: 70px;
+                    ul{
+                        list-style: none;
+                        padding-left: 20px;
+                        li{
+                            font-weight: 500;
+                            margin-bottom:12px;
+
+                            .icon{
+                                font-size: 20px;
+                                color: rgb(var(--primary-rgb));
+                            }
+                        }
+                    }
                     @media (max-width: 767px) {
                         font-size: 12px;
                     } 
