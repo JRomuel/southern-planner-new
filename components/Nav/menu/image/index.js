@@ -6,7 +6,7 @@ import styles from './image.module.scss'
 
 function SideImage({src, isActive}) {
   return (
-    <motion.div className={styles.imageContainer} variants={opacity} animate={isActive ? "open" : "closed"}>
+    <motion.div className={styles.imageContainer} variants={opacity}  custom={[0.2, 0]} initial="open" exit="closed" animate={isActive ? "open" : "closed"}>
         <Image
             src={src}
             fill={true}
