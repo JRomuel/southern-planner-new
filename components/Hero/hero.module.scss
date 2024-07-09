@@ -63,9 +63,10 @@
                 font-weight: 400;
                 font-size: 90px;
                 // line-height: 100%;
+                font-style: italic;
                 letter-spacing: 0.04em;
                 color: #fff;
-                font-family: var(--breathings-font);
+                font-family: var(--playfair-display-font);
              
                 @media (max-width: 1400px) {
                     font-size: 80px;

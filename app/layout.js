@@ -1,6 +1,6 @@
 'use client'
 import localFont from 'next/font/local'
-import { Poppins, Great_Vibes } from 'next/font/google'
+import { Poppins, Playfair_Display } from 'next/font/google'
 import './globals.css'
 
 
@@ -16,18 +16,18 @@ const poppins =  Poppins({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const great_vibes =  Great_Vibes({
+const playfair_Display =  Playfair_Display({
   subsets: ['latin'],
-  weight: ["400"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   //👇 Add variable to our object
-  variable: '--greate-vibes-font',
+  variable: '--playfair-display-font',
 });
 
 export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={`${poppins.className} ${great_vibes.variable} ${breathing.variable}`}>
+      <body className={`${poppins.className} ${playfair_Display.variable} ${breathing.variable}`}>
         {children}        
       </body>
     </html>
