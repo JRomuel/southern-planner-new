@@ -56,7 +56,9 @@
                 .list{
                     display: flex;
                     gap: 70px;
-                    
+                    @media (max-width: 1199px) {
+                        gap: 44px;
+                    } 
                     @media (max-width: 991px) {
                         gap: 20px;
                         font-size: 12px;
@@ -70,7 +72,7 @@
                     ul{
                         list-style: none;
                         padding-left: 20px;
-                        @media (max-width: 991px) {
+                        @media (max-width: 1199px) {
                             padding-left: 0;
                         } 
                         li{
