@@ -27,10 +27,24 @@ export const height = {
         transition
     }
 }
+export const height_loader = {
+    initial: {
+        height: 0
+    },
+    enter: {
+        height: '100%',
+        transition: {duration:5}
+    },
+    exit: {
+        height: 1,
+        transition
+    }
+}
 
 export const translate = {
     initial: {
-        y: "100%"
+        y: "100%",
+        opacity: 0
     },
     enter: (i) => ({
         y: 0,
@@ -73,5 +87,15 @@ export const background = {
     closed: {
         height: 0,
         transition
+    }
+}
+
+export const slideUp = {
+    initial: {
+        top: 0
+    },
+    exit: {
+        top: "-100vh",
+        transition: {duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2}
     }
 }

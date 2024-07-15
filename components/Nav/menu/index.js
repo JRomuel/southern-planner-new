@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { motion } from "framer-motion"
-import { height } from "../anim"
+import { height } from "../../Misc/anim"
 import styles from './menu.module.scss'
 import Body from "./body"
 import SideImage from "./image"

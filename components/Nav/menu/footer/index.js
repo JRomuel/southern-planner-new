@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './footer.module.scss'
 import { motion } from "framer-motion"
-import { translate } from "../../anim"
+import { translate } from "../../../Misc/anim"
 
 function Footer() {
   return (

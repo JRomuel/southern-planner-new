@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './body.module.scss'
 import Link from "next/link"
 import { motion } from "framer-motion";
-import { translate, blur } from "../../anim";
+import { translate, blur } from "../../../Misc/anim";
 
 function Body({links, selectedLink, setSelectedLink, closeNav}) {
 

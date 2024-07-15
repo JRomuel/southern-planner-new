@@ -3,7 +3,7 @@ import styles from './nav.module.scss'
 import Image from "next/image"
 import logo from "../../public/southernplanner-logo-removebg-preview.png"
 import icon from "../../public/southernplanner-icon-logo.png"
-import { opacity, background } from "./anim"
+import { opacity, background } from "../Misc/anim"
 import { motion, useMotionValue, useMotionValueEvent, useScroll, AnimatePresence, backIn } from 'framer-motion'
 import Menu from "./menu"
 
@@ -38,9 +38,9 @@ export default function Nav() {
           </div>
           <motion.div 
             className={styles.menu_wrapper}>
-            <div className={styles.logo}>
-              <Image src={logo} style={{width:'auto', height:"100%"}} alt="logo"/>
-            </div>
+             <div className={styles.logo}>
+                  <Image src={logo} style={{width:'auto', height:"100%"}} alt="logo" />
+              </div>
             <motion.div className={styles.menu} variants={opacity} animate={isMenuActive ? "closed" : "open"}>
               <ul>
                 <li><a href="#about">About Us</a></li>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { opacity } from "../../anim";
+import { opacity } from "../../../Misc/anim";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from './image.module.scss'
