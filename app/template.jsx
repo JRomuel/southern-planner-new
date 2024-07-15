@@ -28,7 +28,7 @@ export default function Template({ children }) {
             setLoading(false);
             document.body.style.cursor = 'default'
             window.scrollTo(0,0);
-          }, 2000)
+          }, 3000)
         }
       )()
 

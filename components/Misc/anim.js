@@ -100,7 +100,7 @@ export const slideUp = {
     }
 }
 
-export const opacity2 = {
+export const loaderOpacity = {
     initial: {
         opacity: 0
     },

@@ -62,9 +62,7 @@
 
 html,
 body {
-
   font-family: var(--font-roboto);
-  
 }
 
 body {
@@ -72,6 +70,14 @@ body {
   overflow: hidden; 
   cursor: wait;
   color: rgba(var(--foreground-rgb),1);
+  
+}
+
+@media (max-width: 991px) {
+  body {
+    overflow: auto; 
+    
+  }
 }
 
 
