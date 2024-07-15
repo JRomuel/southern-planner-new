@@ -108,4 +108,8 @@ export const loaderOpacity = {
         opacity: 0.75,
         transition: {duration: 1, delay: 0.2}
     },
+    exit:{
+        opacity: 0,
+        transition: {duration: 0.2}  
+    }
 }
