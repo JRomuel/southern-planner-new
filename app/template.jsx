@@ -14,19 +14,24 @@ export default function Template({ children }) {
     const [loading, setLoading] = useState(true);
 
     useEffect( () => {
-        const lenis = new Lenis()
+      (
+        async () => {
+          const lenis = new Lenis()
 
-        function raf(time) {
-          lenis.raf(time)
+          function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+          }
           requestAnimationFrame(raf)
+  
+          setTimeout( () => {
+            setLoading(false);
+            document.body.style.cursor = 'default'
+            window.scrollTo(0,0);
+          }, 2000)
         }
-        requestAnimationFrame(raf)
+      )()
 
-        setTimeout( () => {
-          setLoading(false);
-          document.body.style.cursor = 'default'
-          window.scrollTo(0,0);
-        }, 1000)
     }, [])
 
   return (
