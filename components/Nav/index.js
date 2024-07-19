@@ -3,7 +3,7 @@ import styles from './nav.module.scss'
 import Image from "next/image"
 import logo from "../../public/southernplanner-logo-removebg-preview.png"
 import icon from "../../public/southernplanner-icon-logo.png"
-import { opacity, background } from "../Misc/anim"
+import { opacity, background, slide_down } from "../Misc/anim"
 import { motion, useMotionValue, useMotionValueEvent, useScroll, AnimatePresence, backIn } from 'framer-motion'
 import Menu from "./menu"
 
@@ -31,7 +31,7 @@ export default function Nav() {
   
   return (
     <motion.div
-      className={`${styles.wrapper} ${hidden & !isMenuActive ? styles.hidden : ''}`}>
+        className={`${styles.wrapper} ${hidden & !isMenuActive ? styles.hidden : ''}`} custom={[3.5]} variants={slide_down} initial="initial" animate="enter">
         <div className={styles.header}>
           <div className={styles.icon}>
             <Image className={styles.icon_image} src={icon} alt="icon"/>

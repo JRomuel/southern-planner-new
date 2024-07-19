@@ -24,7 +24,9 @@ export default function Loader() {
       variants={slideUp} initial="initial" exit="exit"
       className={styles.loader}
       >
-       <motion.p variants={loaderOpacity} initial="initial" animate="enter" exit="exit">{words[index]}%</motion.p>,
+      <motion.div className={styles.numbers_wrapper} variants={loaderOpacity} initial="initial" animate="enter" exit="exit">
+        {words[index]}%
+      </motion.div>,
     </motion.div>
 
   )

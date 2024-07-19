@@ -59,6 +59,39 @@ export const translate = {
     })
 
 }
+export const slide_down = {
+    initial: {
+        y: "-100%",
+        opacity: 0
+    },
+    enter: (i) => ({
+        y: 0,
+        opacity: 1,
+        transition: {...transition, delay: i[0]}
+    }),
+}
+export const slide_right = {
+    initial: {
+        x: "-100%",
+        opacity: 0
+    },
+    enter: (i) => ({
+        x: 0,
+        opacity: 1,
+        transition: {...transition, delay: i[0]}
+    }),
+}
+export const slide_left = {
+    initial: {
+        x: "100%",
+        opacity: 0
+    },
+    enter: (i) => ({
+        x: 0,
+        opacity: 1,
+        transition: {...transition, delay: i[0]}
+    }),
+}
 
 export const blur = {
     initial: {
