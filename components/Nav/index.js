@@ -31,7 +31,7 @@ export default function Nav() {
   
   return (
     <motion.div
-        className={`${styles.wrapper} ${hidden & !isMenuActive ? styles.hidden : ''}`} custom={[3.5]} variants={slide_down} initial="initial" animate="enter">
+        className={`${styles.wrapper} ${hidden & !isMenuActive ? styles.hidden : ''}`}>
         <div className={styles.header}>
           <div className={styles.icon}>
             <Image className={styles.icon_image} src={icon} alt="icon"/>
