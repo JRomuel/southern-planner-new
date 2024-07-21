@@ -1,6 +1,7 @@
 'use client'
 import localFont from 'next/font/local'
 import { Poppins, Playfair_Display } from 'next/font/google'
+import Head from "../components/Head"
 import './globals.css'
 
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <Head/>
       <body className={`${poppins.className} ${playfair_Display.variable} ${breathing.variable}`}>
         {children}        
       </body>
