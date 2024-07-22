@@ -22,7 +22,7 @@ export default function Weddings() {
           <div className={styles.content_wrapper}>
             <div className={styles.left_content}>
                 <h3 className={`${styles.title} section-title`}>Memorable Weddings</h3>
-                <p className={styles.sub_text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /><br /> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                <p className={styles.sub_text}>Planning a wedding is always an adventure. One of the most memorable events we handled was organizing three weddings in a single day. Despite unexpected challenges like weather surprises, scheduled power interruptions, and last-minute changes, we remained calm and composed, ensuring everything went smoothly. <br /><br />Working with these couples has been an incredible experience for us. Their love and commitment to each other shone through every obstacle, resulting in a stunning and unforgettable celebration. It has been a privilege to support them on this journey and witness their unwavering love come to life in such a beautiful way.</p>
     
                 <ParallaxImage src={weddings_image} container={container} alt='Southern Planners'/>
 
@@ -31,7 +31,7 @@ export default function Weddings() {
                 <div style={{marginBottom: '70px'}}>
                     <ParallaxImage src={weddings_image_2} container={container} label='Weddings' label_position='right' alt='Southern Planners'/>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /><br /> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                <p>Some weddings are grand, while others are intimate and cozy, like the one Wynne and Sari  envisioned. They wanted a small, meaningful gathering with their closest friends and family, filled with personal touches and heartfelt moments. Their celebration was a vibrant and heartfelt expression of their journey together.  It was a privilege to witness and support their love story, and the entire event was a testament to the power of love and acceptance. <br /><br />From the moment I met Tantine and Cha, I could tell their wedding was destined to be extraordinary. Their vision was clear: a celebration of love, laughter, and the unique bond they share.Their Filipina-themed wedding exuded elegance, romance, and a cozy, homey atmosphere. Every element, from the stunning floral designs to the personal touches, showcased their unique personalities and the strong connection they share. It has been a true privilege to help bring their dream wedding to life and to see the genuine happiness on their faces as they began this new chapter together.</p>
                 <motion.div className={styles.floating_text} style={{x: '-50%', y: speed}}>
                   <span>Wedding Collections</span>
                 </motion.div>
