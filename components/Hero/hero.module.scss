@@ -62,7 +62,9 @@
             h1{
                 font-weight: 400;
                 font-size: 90px;
+                // line-height: 100%;
                 padding: 0 10px;
+                display: flex;
                 font-style: italic;
                 color: #fff;
                 font-family: var(--playfair-display-font);
