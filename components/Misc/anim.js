@@ -41,9 +41,24 @@ export const height_loader = {
     }
 }
 
+
+export const customOpacity = {
+    initial: {
+        opacity: 0
+    },
+    open: (i) => ({
+        opacity: 1,
+        transition: {...transition, delay: i[0]}
+    }),
+    closed: (i) => ({
+        opacity: 0,
+        transition: {...transition, delay: i[0]}
+    })
+}
+
 export const translate = {
     initial: {
-        y: 100,
+        y: "100%",
         opacity: 0
     },
     enter: (i) => ({
@@ -53,7 +68,7 @@ export const translate = {
     }),
 
     exit: (i) => ({
-        y: 100,
+        y: "100%",
         opacity: 0,
         transition: {duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: i[1]}
     })

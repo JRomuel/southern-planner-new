@@ -3,7 +3,7 @@ import styles from './hero.module.scss'
 import { useScroll, useTransform, motion, useMotionValueEvent } from 'framer-motion';
 import { useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { translate, blur } from "../Misc/anim";
+import { translate, blur, opacity, customOpacity } from "../Misc/anim";
 
 function debounce(fn, ms) {
     let timer;
@@ -89,8 +89,8 @@ export default function Hero() {
                     </div>
                     <div className={styles.text_content}>
                         <div className="container">
-                            <h1>{getChar('Wedding Planner')}</h1>
-                            <motion.p custom={[3.7, 0]} variants={translate} initial="initial" animate="enter" exit="exit">LET’S PLAN YOUR BIG DAY, STRESS FREE!</motion.p>
+                            <h1><motion.span custom={[3.5, 0]} variants={translate} initial="initial" animate="enter" exit="exit">Wedding Planner</motion.span></h1>
+                            <motion.p custom={[4.1]} variants={customOpacity} initial="initial" animate="open" exit="close">LET’S PLAN YOUR BIG DAY, STRESS FREE!</motion.p>
                         </div>
                     </div>
                     <motion.div className={styles.mask} style={{borderWidth: padding}}></motion.div>
