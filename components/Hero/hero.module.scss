@@ -60,11 +60,12 @@
             position: relative;
             text-align: center;
             h1{
-                font-weight: 300;
+                font-weight: 400;
                 font-size: 90px;
                 // line-height: 100%;
                 padding: 0 10px;
                 display: flex;
+                font-style: italic;
                 color: #fff;
                 font-family: var(--playfair-display-font);
                 overflow: hidden;
@@ -84,9 +85,13 @@
                 @media (max-width: 376px) {
                     font-size: 36px;
                 }
-
+  
                 span{
                     min-width: 20px;
+
+                    &:last-of-type{
+                        padding-right: 10px;
+                    }
                     @media (max-width: 500px) {
                         min-width: 14px;
                     }
