@@ -43,7 +43,7 @@ export const height_loader = {
 
 export const translate = {
     initial: {
-        y: "100%",
+        y: 100,
         opacity: 0
     },
     enter: (i) => ({
@@ -53,7 +53,7 @@ export const translate = {
     }),
 
     exit: (i) => ({
-        y: "100%",
+        y: 100,
         opacity: 0,
         transition: {duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: i[1]}
     })
