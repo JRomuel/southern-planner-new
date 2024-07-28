@@ -2,7 +2,7 @@ import React, {useRef} from 'react'
 import styles from './happyclients.module.scss'
 import ParallaxImage from "../Misc/ParallaxImage"
 import client_image_1 from '../../public/images/happy-clients-6.jpg'
-import client_image_2 from '../../public/images/client_4.jpeg'
+import client_image_2 from '../../public/images/client_4-min.jpeg'
 import client_image_3 from '../../public/images/happy-clients-7.jpeg'
 
 export default function HappyClients() {

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import about_image from "../../public/images/about-image-new.jpg"
+import about_image from "../../public/images/about-image-new-2.jpg"
 import styles from './about.module.scss'
 import ParallaxImage from "../Misc/ParallaxImage";
 

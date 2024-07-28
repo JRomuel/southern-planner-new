@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 import ParallaxImage from "../Misc/ParallaxImage"
 import styles from './weddings.module.scss'
-import weddings_image from "../../public/images/about-image.jpg"
-import weddings_image_2 from "../../public/images/wedding-image-2.jpg"
+import weddings_image_2 from "../../public/images/weddings-image-min.jpg"
+import weddings_image from "../../public/images/weddings-image-3.jpg"
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 
