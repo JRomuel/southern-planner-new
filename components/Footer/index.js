@@ -9,30 +9,6 @@ import partners_rrc from "../../public/images/partner-rrc.png"
 export default function Footer() {
   return (
     <footer className={styles.section}>
-      <div className={styles.partners}>
-          <div className="container">
-            <div className={styles.wrapper}>
-              <p className={styles.title}>Partners:</p>
-              <div className={styles.images}>
-                <Image 
-                  className={styles.image}
-                  src={partners_balar} 
-                  placeholder="blur"
-                  alt="Balara Hotel & Spa"/>
-                <Image 
-                  className={styles.image}
-                  src={partners_raza} 
-                  placeholder="blur"
-                  alt="RAZA Stills & Motions"/>
-                <Image 
-                  className={styles.image}
-                  src={partners_rrc} 
-                  placeholder="blur"
-                  alt="RRC Professional Lights & Sounds"/>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="container">
             <div className={styles.content_wrapper}>
                 <div className={styles.brand}>
