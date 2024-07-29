@@ -26,7 +26,7 @@ function Menu({closeNav}) {
     {
         title: "Weddings",
         href: "#weddings",
-        src: "/images/weddings-image.jpg"
+        src: "/images/weddings-image-min.jpg"
     },
     {
         title: "Services",
