@@ -13,6 +13,8 @@ function Head() {
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://www.southern-planners.com/"/>
         <meta property="og:image" content="/misc/southern-planner-og-image.png"/>
+        <meta property="fb:app_id" content="southernplanners" />
+        <meta property="og:description" content="Southern Planners was stablished since 2018, we adore working with couples because we believe in the magic of love stories coming to life."/>
 
         <link rel="apple-touch-icon" sizes="180x180" href="/misc/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/misc/favicon-32x32.png"/>
