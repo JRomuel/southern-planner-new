@@ -25,7 +25,7 @@ export default function Footer() {
                         <div className={styles.contact_details}>
                           <p className="mb-4"><strong>Contact</strong></p>
                           <p>+63 9631234123</p>
-                          <p><a href="mailto:hecelmariemendoza@gmail.com">hecelmariemendoza@gmail.com</a></p>
+                          <p><a href="mailto:thesouthernplanners@gmail.com">thesouthernplanners@gmail.com</a></p>
                         </div>
                         <div className={styles.contact_details}>
                           <p className="mb-4"><strong>Follow</strong></p>
