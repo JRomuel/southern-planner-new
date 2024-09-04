@@ -20,6 +20,15 @@ function Head() {
         <link rel="icon" type="image/png" sizes="32x32" href="/misc/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/misc/favicon-16x16.png"/>
         <link rel="manifest" href="/misc/site.webmanifest"/>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6WCPLST65"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Q6WCPLST65');
+        </script>
     </head>
   )
 }
