@@ -22,6 +22,7 @@ function Head() {
         <link rel="icon" type="image/png" sizes="16x16" href="/misc/favicon-16x16.png"/>
         <link rel="manifest" href="/misc/site.webmanifest"/>
 
+        <meta name="google-site-verification" content="lhvU0vR7f1l-Ddqeyrzs00f2cywCjgRYm4npx4jhoNo" />
         <GoogleAnalytics gaId="G-Q6WCPLST65" />
     </head>
   )
