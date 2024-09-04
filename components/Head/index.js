@@ -8,6 +8,8 @@ function Head() {
         <meta charSet="UTF-8"/>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="keywords" content="wedding, wedding planners, wedding coordinator, marinduque, event planner, events, marinduque coordinator, wedding coordinator manila"/>
+        <meta name="author" content="Hecel Marie Mendoza"/>
         <meta name="description" content="Event planner and wedding coordinator" />
 
         <meta property="og:title" content="Southern Planners Event Planners & Stylists"/>
