@@ -9,14 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.2.7",
     "@studio-freight/lenis": "^1.0.34",
     "framer-motion": "^10.16.4",
     "next": "^13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^5.0.1",
-    "sass": "^1.67.0",
-    "react-intersection-observer": "^9.4.3"
+    "react-intersection-observer": "^9.4.3",
+    "sass": "^1.67.0"
   },
   "devDependencies": {
     "eslint": "8.56.0",
