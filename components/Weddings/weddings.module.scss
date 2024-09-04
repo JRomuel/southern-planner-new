@@ -2,7 +2,7 @@
     display: flex;
     gap: 50px;
     position: relative;
-    padding-bottom: 280px;
+    padding-bottom: 350px;
     @media (max-width: 767px) {
         flex-direction: column;
     }
@@ -39,7 +39,7 @@
         position: absolute;
         width: 100%;
         font-size: 164px;
-        bottom: -50px;
+        bottom: -110px;
         left: 50%;
         line-height: 1;
         color: rgba(var(--primary-rgb), 0.3);
