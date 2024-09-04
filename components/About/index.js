@@ -16,7 +16,7 @@ export default function About() {
             </div>
             <div className={styles.text_content}>
                 <h3 className={`${styles.title} section-title`}>Southern Planners</h3>
-                <p>SEstablished in 2018, Southern Planners is passionate about working with couples because we believe in the magic of bringing love stories to life. The privilege of being part of your special day and ensuring every detail is perfect fuels our dedication. We are excited to collaborate with you to turn your vision into reality. At Southern Planners, we are committed to helping you achieve all your goals for your special day.
+                <p>Established in 2018, Southern Planners is passionate about working with couples because we believe in the magic of bringing love stories to life. The privilege of being part of your special day and ensuring every detail is perfect fuels our dedication. We are excited to collaborate with you to turn your vision into reality. At Southern Planners, we are committed to helping you achieve all your goals for your special day.
                 <br /><br />
                 <strong>Your Perfect Day, Perfectly Planned.</strong></p>
             </div>
