@@ -1,4 +1,5 @@
 import React from 'react'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 function Head() {
   return (
@@ -21,14 +22,7 @@ function Head() {
         <link rel="icon" type="image/png" sizes="16x16" href="/misc/favicon-16x16.png"/>
         <link rel="manifest" href="/misc/site.webmanifest"/>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6WCPLST65"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-
-          gtag('config', 'G-Q6WCPLST65');
-        </script>
+        <GoogleAnalytics gaId="G-Q6WCPLST65" />
     </head>
   )
 }
