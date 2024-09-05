@@ -24,14 +24,14 @@ export default function Footer() {
                         </div>
                         <div className={styles.contact_details}>
                           <p className="mb-4"><strong>Contact</strong></p>
-                          <p>+63 9631234123</p>
+                          <p>+63 9634146451</p>
                           <p><a href="mailto:thesouthernplanners@gmail.com">thesouthernplanners@gmail.com</a></p>
                         </div>
                         <div className={styles.contact_details}>
                           <p className="mb-4"><strong>Follow</strong></p>
                           <ul>
-                            <li><a href="https://www.facebook.com/southernplanners"><AiFillFacebook/></a></li>
-                            <li><a href=""><AiFillInstagram/></a></li>
+                            <li><a href="https://www.facebook.com/southernplanners" target="_blank"><AiFillFacebook/></a></li>
+                            <li><a href="https://www.instagram.com/the_southern_planners/" target="_blank"><AiFillInstagram/></a></li>
                           </ul>
                         </div>
                     </div>
