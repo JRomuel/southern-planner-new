@@ -65,9 +65,11 @@
                     } 
                     @media (max-width: 767px) {
                         gap: 40px;
+                        display: block;
                     } 
                     @media (max-width: 500px) {
                         gap: 20px;
+                        display: flex;
                     } 
                     ul{
                         list-style: none;
